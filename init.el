@@ -4,8 +4,8 @@
   (push dir load-path))
 (defvar my-init-file-root "~/.emacs.d/elisp/")
 (push my-init-file-root load-path)
-(push (concat my-init-file-root "tabbar") load-path)
-(push (concat my-init-file-root "markdown-mode") load-path)
+;(push (concat my-init-file-root "tabbar") load-path)
+;(push (concat my-init-file-root "markdown-mode") load-path)
 
 (setq lucid-emacs-p nil) ;;legacy support
 (setq aquamacs-p nil) ;;more legacy
@@ -73,6 +73,8 @@
     tagedit
 
     markdown-mode
+
+    tabbar
 
     ;; git integration
     ;; Let's wait until we have emacs 24.4 on all my machines
