@@ -72,6 +72,8 @@
     ;; edit html tags like sexps
     tagedit
 
+    markdown-mode
+
     ;; git integration
     ;; Let's wait until we have emacs 24.4 on all my machines
     ;;magit
