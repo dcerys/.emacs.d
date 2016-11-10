@@ -13,9 +13,11 @@
 (require 'clojure-mode-extra-font-locking)
 
 ;; syntax hilighting for midje
+;; Is any of this necessary?
 (add-hook 'clojure-mode-hook
           (lambda ()
-            (setq inferior-lisp-program "lein repl")
+            ;;The following gets in the way of SLIME...
+            ;;(setq inferior-lisp-program "lein repl")
             (font-lock-add-keywords
              nil
              '(("(\\(facts?\\)"
@@ -28,6 +30,30 @@
 ;;;;
 ;; Cider
 ;;;;
+
+;;(require 'cider)
+
+;; (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
+(add-hook 'cider-repl-mode-hook 'subword-mode)
+; (add-hook 'cider-repl-mode-hook 'paredit-mode)
+
+;;; WOAH strict mode is TOO STRICT
+; (add-hook 'cider-repl-mode-hook 'smartparens-strict-mode)
+(add-hook 'cider-repl-mode-hook 'smartparens-mode)
+(add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
+
+;;(require 'clojure-mode)
+(add-hook 'clojure-mode-hook 'cider-mode)
+;; (add-hook 'clojure-mode-hook 'paredit-mode)
+;;; WOAH strict mode is TOO STRICT
+;; (add-hook 'clojure-mode-hook 'smartparens-strict-mode)
+(add-hook 'cider-repl-mode-hook 'smartparens-mode)
+(add-hook 'clojure-mode-hook
+          'rainbow-delimiters-mode
+           ;; '(lambda ()
+           ;;   (yas/minor-mode-on))
+           )
+
 
 ;; provides minibuffer documentation for the code you're typing into the repl
 ;;(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)

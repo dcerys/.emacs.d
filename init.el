@@ -40,6 +40,9 @@
     ;; Cheatsheet: http://www.emacswiki.org/emacs/PareditCheatsheet
     paredit
 
+    ;; https://github.com/Fuco1/smartparens
+    smartparens
+
     ;; key bindings and code colorization for Clojure
     ;; https://github.com/clojure-emacs/clojure-mode
     clojure-mode
@@ -67,7 +70,7 @@
     projectile
 
     ;; colorful parenthesis matching
-    ;rainbow-delimiters
+    rainbow-delimiters
 
     ;; edit html tags like sexps
     tagedit
@@ -78,7 +81,7 @@
 
     ;; git integration
     ;; Let's wait until we have emacs 24.4 on all my machines
-    ;;magit
+    magit
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
