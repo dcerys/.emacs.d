@@ -2,7 +2,7 @@
 ;; Setup slime and lisp
 (defvar lisp-mode-to-use (if (eq system-type 'darwin)
                              'slime
-                           'allegro)
+                           'slime)
   "What lisp mode to use.  The supported values are:
 allegro, slime, nil.")
 
