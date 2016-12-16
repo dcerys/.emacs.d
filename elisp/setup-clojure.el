@@ -39,7 +39,7 @@
 
 ;;; WOAH strict mode is TOO STRICT
 ; (add-hook 'cider-repl-mode-hook 'smartparens-strict-mode)
-(add-hook 'cider-repl-mode-hook 'smartparens-mode)
+;; (add-hook 'cider-repl-mode-hook 'smartparens-mode)
 (add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
 
 ;;(require 'clojure-mode)
@@ -47,7 +47,7 @@
 ;; (add-hook 'clojure-mode-hook 'paredit-mode)
 ;;; WOAH strict mode is TOO STRICT
 ;; (add-hook 'clojure-mode-hook 'smartparens-strict-mode)
-(add-hook 'cider-repl-mode-hook 'smartparens-mode)
+;; (add-hook 'cider-repl-mode-hook 'smartparens-mode)
 (add-hook 'clojure-mode-hook
           'rainbow-delimiters-mode
            ;; '(lambda ()
