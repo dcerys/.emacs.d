@@ -18,6 +18,8 @@
 (require 'recentf)
 (recentf-mode 1)
 (setq recentf-max-menu-items 40)
+(setq recentf-exclude '("elpa"))
+(recentf-cleanup)
 
 
 ;; ido-mode allows you to more easily navigate choices. For example,

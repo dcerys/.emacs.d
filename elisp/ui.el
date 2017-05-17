@@ -8,7 +8,8 @@
 ;(menu-bar-mode -1)
 
 ;; Show line numbers
-;(global-linum-mode)
+(global-linum-mode 1)
+(column-number-mode 1) ;and column number for cursor
 
 ;; You can uncomment this to remove the graphical toolbar at the top. After
 ;; awhile, you won't need the toolbar.
@@ -31,6 +32,9 @@
 
 ;; increase font size for better readability
 ;;(set-face-attribute 'default nil :height 140)
+
+(global-set-key (kbd "s-=") 'text-scale-increase)
+(global-set-key (kbd "s--") 'text-scale-decrease)
 
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height

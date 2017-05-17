@@ -19,7 +19,7 @@
 (add-to-list 'package-archives
              '("tromey" . "http://tromey.com/elpa/") t)
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.org/packages/") t)
+             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
@@ -77,11 +77,12 @@
 
     markdown-mode
 
-    tabbar
+    ;; tabbar
 
     ;; git integration
     ;; Let's wait until we have emacs 24.4 on all my machines
     magit
+    magit-popup
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -133,7 +134,7 @@
 
 
 ;; (require) your ELPA packages, configure them as normal
-(require 'tabbar)
+;(require 'tabbar)
 
 (autoload 'markdown-mode "markdown-mode"
    "Major mode for editing Markdown files" t)

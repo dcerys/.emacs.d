@@ -110,3 +110,5 @@
 
 ;; pamela specific
 (add-to-list 'auto-mode-alist '("\\.pamela$" . clojure-mode))
+
+;; (setq cider-boot-parameters "cider-boot")

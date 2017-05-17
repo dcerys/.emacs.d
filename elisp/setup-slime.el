@@ -1,8 +1,8 @@
 
 
-(require 'slime-autoloads)
+;(require 'slime-autoloads)
 (require 'slime)
-(slime-setup '(slime-fancy slime-asdf slime-banner))
+;TEMP (slime-setup '(slime-fancy slime-asdf slime-banner))
 (global-set-key "\C-cs" 'slime-selector)
 (setq slime-complete-symbol*-fancy t)
 (setq slime-complete-symbol-function 'slime-fuzzy-complete-symbol)

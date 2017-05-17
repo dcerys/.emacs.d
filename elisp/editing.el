@@ -51,6 +51,10 @@
   (comment-or-uncomment-region (line-beginning-position) (line-end-position)))
 (global-set-key (kbd "C-;") 'toggle-comment-on-line)
 
+(global-set-key (kbd "C-x c") 'comment-region)
+(global-set-key (kbd "C-x x") 'uncomment-region)
+(global-set-key (kbd "C-x ;") 'comment-or-uncomment-region)
+
 ;; yay rainbows!
 ;(global-rainbow-delimiters-mode t)
 
