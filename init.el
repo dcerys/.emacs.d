@@ -83,6 +83,8 @@
     ;; Let's wait until we have emacs 24.4 on all my machines
     magit
     magit-popup
+
+    elpy
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -127,10 +129,11 @@
 ;; For editing lisps
 (load "elisp-editing.el")
 
-;; Langauage-specific
+;; Language-specific
 (load "setup-clisp.el")
 (load "setup-clojure.el")
 (load "setup-js.el")
+(load "setup-python.el")
 
 
 ;; (require) your ELPA packages, configure them as normal

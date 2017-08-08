@@ -9,7 +9,7 @@
  '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (magit-filenotify company tagedit tabbar smex smartparens slime rainbow-delimiters projectile paredit markdown-mode magit-annex ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider)))
+    (elpy magit-filenotify company tagedit tabbar smex smartparens slime rainbow-delimiters projectile paredit markdown-mode magit-annex ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider)))
  '(safe-local-variable-values
    (quote
     ((Package . CL-USER)
