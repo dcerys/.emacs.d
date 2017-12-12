@@ -59,7 +59,8 @@
     ;; allow ido usage in as many contexts as possible. see
     ;; customizations/navigation.el line 23 for a description
     ;; of ido
-    ido-ubiquitous
+    ;; ido-ubiquitous
+    ido-completing-read+
 
     ;; Enhances M-x to allow easier execution of commands. Provides
     ;; a filterable list of possible commands in the minibuffer
@@ -190,7 +191,7 @@
 ;;                          (untabify (point-min) (point-max)))
 ;;             nil ))
 
-(setq-default fill-column 100)
+(setq-default fill-column 80)
 
 
 (setq buffer-menu-buffer-font-lock-keywords
