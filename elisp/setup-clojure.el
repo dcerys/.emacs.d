@@ -25,7 +25,8 @@
                ("(\\(background?\\)"
                 (1 font-lock-keyword-face))))
             (define-clojure-indent (fact 1))
-            (define-clojure-indent (facts 1))))
+            (define-clojure-indent (facts 1))
+            (define-clojure-indent (recurrence 2))))
 
 ;;;;
 ;; Cider
