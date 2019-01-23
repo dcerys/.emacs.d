@@ -217,11 +217,11 @@
 ;;; For emacsclient...
 (server-start)
 
-(when (eq system-type 'darwin)
-  ;(set-default-font "-*-Courier-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1")
-  ;(set-default-font "-apple-inconsolata-medium-r-normal--14-130-72-72-m-130-iso10646-1")
-  (set-default-font "-apple-inconsolata-medium-r-normal--14-*-*-*-m-0-iso10646-1")
-  )
+;; (when (eq system-type 'darwin)
+;;   ;(set-default-font "-*-Courier-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1")
+;;   ;(set-default-font "-apple-inconsolata-medium-r-normal--14-130-72-72-m-130-iso10646-1")
+;;   (set-default-font "-apple-inconsolata-medium-r-normal--14-*-*-*-m-0-iso10646-1")
+;;   )
 
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
