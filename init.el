@@ -146,6 +146,10 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
+(autoload 'aadl-mode "aadl-mode"
+   "Major mode for editing AADL files" t)
+(add-to-list 'auto-mode-alist '("\\.aadl\\'" . aadl-mode))
+
 ;;; Setup Org mode
 ;; The following lines are always needed.  Choose your own keys.
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
