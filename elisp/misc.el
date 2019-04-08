@@ -14,3 +14,8 @@
 ;; Override default of xpdf when on a Mac
 (when (eq system-type 'darwin)
   (setq rst-pdf-program "open"))
+
+;; Magit
+(global-set-key (kbd "C-x M-g") 'magit-dispatch)
+(define-key magit-file-mode-map
+  (kbd "C-c g") 'magit-file-popup)
