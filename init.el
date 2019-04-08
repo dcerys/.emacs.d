@@ -235,3 +235,5 @@
 (if (file-exists-p host-config)
   (load host-config t t)
   (message "No host config specified"))
+
+;; This is a test
