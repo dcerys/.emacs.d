@@ -10,3 +10,7 @@
 
 ;; Go straight to scratch buffer on startup
 (setq inhibit-startup-message t)
+
+;; Override default of xpdf when on a Mac
+(when (eq system-type 'darwin)
+  (setq rst-pdf-program "open"))
