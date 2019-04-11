@@ -8,6 +8,7 @@
  '(cider-cljs-lein-repl
    "(do (require 'weasel.repl.websocket) (cemerick.piggieback/cljs-repl (weasel.repl.websocket/repl-env :ip \"127.0.0.1\" :port 9001)))")
  '(coffee-tab-width 2)
+ '(magit-commit-arguments (quote ("--signoff")))
  '(package-selected-packages
    (quote
     (clj-refactor elpy magit-filenotify company tagedit tabbar smex smartparens slime rainbow-delimiters projectile paredit markdown-mode magit-annex ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider)))
