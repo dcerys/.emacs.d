@@ -16,6 +16,7 @@
   (setq rst-pdf-program "open"))
 
 ;; Magit
+(require 'magit)
 (global-set-key (kbd "C-x M-g") 'magit-dispatch)
 (define-key magit-file-mode-map
   (kbd "C-c g") 'magit-file-popup)
