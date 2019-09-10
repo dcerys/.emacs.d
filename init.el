@@ -1,5 +1,8 @@
 (require 'cl)
 
+;; To address an emacs package loading problem in Emacs 26.2
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
+
 (defun add-to-load-path (dir)
   (push dir load-path))
 (defvar my-init-file-root "~/.emacs.d/elisp/")
