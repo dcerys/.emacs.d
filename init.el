@@ -56,6 +56,7 @@
     ;; integration with a Clojure REPL
     ;; https://github.com/clojure-emacs/cider
     cider
+    clj-refactor
 
     slime
 
