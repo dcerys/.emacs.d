@@ -74,3 +74,10 @@
 
 ;; no bell
 ;(setq ring-bell-function 'ignore)
+
+;; Set the Option/Alt key to be Meta on MacOS
+(when (eq system-type 'darwin)
+  (setq mac-option-key-is-meta t
+        mac-command-key-is-meta nil
+        mac-command-modifier 'super
+        mac-option-modifier 'meta))

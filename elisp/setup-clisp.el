@@ -9,7 +9,8 @@ allegro, slime, nil.")
 (setq allegro-directory "/usr/local/acl100/")
 
 (cond ((eq lisp-mode-to-use 'slime)
-       (load "setup-slime.el")
+       ;;4/29/22: Some problems with SLIME and package-desc-vers
+       ;;(load "setup-slime.el")
        )
       ((eq lisp-mode-to-use 'allegro)
        (load "setup-allegro.el"))

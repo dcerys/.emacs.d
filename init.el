@@ -1,4 +1,4 @@
-(require 'cl)
+(require 'cl-lib)
 
 ;; To address an emacs package loading problem in Emacs 26.2
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
@@ -17,8 +17,8 @@
 (setq package-enable-at-startup nil)
 
 (require 'package)
-(add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+;; (add-to-list 'package-archives
+;;              '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives
              '("tromey" . "http://tromey.com/elpa/") t)
 (add-to-list 'package-archives
@@ -86,8 +86,8 @@
 
     ;; git integration
     ;; Let's wait until we have emacs 24.4 on all my machines
-    magit
-    magit-popup
+    ;;magit
+    ;;magit-popup
 
     elpy
     ))
@@ -239,3 +239,7 @@
 (if (file-exists-p host-config)
   (load host-config t t)
   (message "No host config specified"))
+
+(when (string= default-directory "/")
+  (setq default-directory (getenv "HOME"))
+  (setq command-line-default-directory (getenv "HOME")))
