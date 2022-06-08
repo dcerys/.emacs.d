@@ -235,7 +235,7 @@
 (load custom-file)
 
 ;; Include host-specific config:
-(setq host-config (concat "~/.emacs.d/config/emacs-" (system-name) ".el"))
+(setq host-config (concat "~/.emacs.d/elisp/emacs-" (system-name) ".el"))
 (if (file-exists-p host-config)
   (load host-config t t)
   (message "No host config specified"))
