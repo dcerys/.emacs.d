@@ -8,7 +8,13 @@
 ;(menu-bar-mode -1)
 
 ;; Show line numbers
-(global-linum-mode 1)
+;;(global-linum-mode 1)
+;; (global-display-line-numbers-mode 1)
+;; Alternatively, to use it only in programming modes:
+;; (add-hook 'prog-mode-hook #'display-line-numbers-mode)
+(if (symbol-function 'display-line-numbers-mode)
+    (add-hook 'prog-mode-hook #'display-line-numbers-mode)
+  (global-linum-mode 1))
 (column-number-mode 1) ;and column number for cursor
 
 ;; You can uncomment this to remove the graphical toolbar at the top. After
@@ -35,6 +41,8 @@
 
 (global-set-key (kbd "s-=") 'text-scale-increase)
 (global-set-key (kbd "s--") 'text-scale-decrease)
+
+(global-set-key (kbd "s-r") 'revert-buffer-quick)
 
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height
