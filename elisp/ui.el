@@ -89,3 +89,5 @@
         mac-command-key-is-meta nil
         mac-command-modifier 'super
         mac-option-modifier 'meta))
+
+;; (setq x-alt-keysym 'meta)
