@@ -10,6 +10,9 @@
 ;(push (concat my-init-file-root "tabbar") load-path)
 ;(push (concat my-init-file-root "markdown-mode") load-path)
 
+;;Why is this needed?
+(add-to-load-path "/Users/dcerys/.emacs.d/elpa/seq-2.24")
+
 (setq lucid-emacs-p nil) ;;legacy support
 (setq aquamacs-p nil) ;;more legacy
 
